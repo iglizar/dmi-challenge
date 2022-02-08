@@ -24,9 +24,14 @@ The navigation of the pages is managed with NextJS. It has a main screen and ano
 Tailwind CSS. The website adapts to any screen type.
 
 ## Run the project
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+First, install all the required dependencies:
+
+```
+npm install
+```
+
+Finally, run the development server:
 
 ```bash
 npm run dev
