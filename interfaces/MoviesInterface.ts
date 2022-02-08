@@ -44,19 +44,13 @@ export interface Network {
   country: Country;
 }
 
-export interface Country {
-  name: string;
-  code: string;
-  timezone: string;
-}
-
 export interface WebChannel {
   id: number;
   name: string;
-  country?: Country2;
+  country?: Country;
 }
 
-export interface Country2 {
+export interface Country {
   name: string;
   code: string;
   timezone: string;
