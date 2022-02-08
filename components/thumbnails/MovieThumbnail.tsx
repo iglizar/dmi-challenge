@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { IMovie } from "interfaces/MoviesInterface";
-import CalendarIcon from "components/CalendarIcon";
-import CoverNotFound from "components/CoverNotFound";
+import { IMovie } from "@/interfaces/MoviesInterface";
+import CalendarIcon from "@/components/CalendarIcon";
+import CoverNotFound from "@/components/CoverNotFound";
 
 const MovieThumbnail = ({
   movie,

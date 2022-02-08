@@ -1,14 +1,14 @@
-import { IMovie } from "interfaces/MoviesInterface";
+import { IMovie } from "@/interfaces/MoviesInterface";
 import StarRatingComponent from "react-star-rating-component";
-import CalendarIcon from "components/CalendarIcon";
+import CalendarIcon from "@/components/CalendarIcon";
 import Link from "next/link";
 
-const TextCardMovie = ({
+const DescriptionCard = ({
   movie,
   extendDetails =false,
 }: {
   movie: IMovie;
-  extendDetails?: boolean;
+  extendDetails?: boolean ;
 }) => {
   return (
     <div className="flex flex-col">
@@ -23,7 +23,7 @@ const TextCardMovie = ({
                 {movie.show.rating.average && (
                   <StarRatingComponent
                     name="rate movie"
-                    value={Math.round((movie.show.rating.average * 10) / 2)}
+                    value={Math.round((movie.show.rating.average) / 2)}
                     editing={false}
                   />
                 )}
@@ -63,4 +63,4 @@ const TextCardMovie = ({
   );
 };
 
-export default TextCardMovie;
+export default DescriptionCard;

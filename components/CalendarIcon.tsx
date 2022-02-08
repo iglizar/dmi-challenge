@@ -1,4 +1,4 @@
-import { IMovie } from "interfaces/MoviesInterface";
+import { IMovie } from "@/interfaces/MoviesInterface";
 
 const CalendarIcon = ({ movie }: { movie: IMovie  }) => {
   return (

@@ -1,5 +1,5 @@
-import MovieThumbnail from "components/thumbnails/MovieThumbnail";
-import { IMovie } from 'interfaces/MoviesInterface';
+import MovieThumbnail from "@/components/thumbnails/MovieThumbnail";
+import { IMovie } from '@/interfaces/MoviesInterface';
 import DescriptionCard from './DescriptionCard';
 
 const DetailCard = ({movie}: {movie: IMovie | undefined}) => {

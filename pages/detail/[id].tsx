@@ -1,8 +1,8 @@
 
 import { useEffect, useState } from "react";
-import DetailCard from "components/card/DetailCard";
-import { ShowInterface,IMovie } from "interfaces/MoviesInterface";
-import Layout  from "layouts/Layout";
+import DetailCard from "@/components/card/DetailCard";
+import { ShowInterface,IMovie } from "@/interfaces/MoviesInterface";
+import Layout  from "@/layouts/Layout";
 
 const URL_MOVIE = "https://api.tvmaze.com/shows/";
 

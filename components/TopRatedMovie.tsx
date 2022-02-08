@@ -1,19 +1,19 @@
-import MovieThumbnail from 'components/thumbnails/MovieThumbnail';
-import { IMovie} from 'interfaces/MoviesInterface';
-import DescriptionCard from "./card/DescriptionCard";
+import MovieThumbnail from '@/components/thumbnails/MovieThumbnail';
+import { IMovie } from '@/interfaces/MoviesInterface';
+import DescriptionCard from "@/components/card/DescriptionCard";
 
-const TopRatedMovie = ({ topMovie }: { topMovie: IMovie | undefined }) => {
-  if (!topMovie) return <></>;
+const TopRatedMovie = ({ movie }: { movie: IMovie | undefined }) => {
+  if (!movie) return <></>;
 
   return (
     <div className="flex flex-col sm:flex-row w-full justify-around space-x-5">
       <div className="w-1/2 sm:w-auto self-center">
         <MovieThumbnail
-          movie={topMovie}
+          movie={movie}
           imageType="original"
         />
       </div>
-        <DescriptionCard movie={topMovie}/>
+        <DescriptionCard movie={movie}/>
       </div>
   );
 }
