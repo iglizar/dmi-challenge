@@ -1,6 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TV Show - React - Next JS - Typescript - FrontEnd Technical Test
+The website was designed based on the current movie platforms.
+
+## URL
+[DMI TV Show URL](https://dmichallenge.netlify.app/).
+
+## Task
+The task is to build a TV show interface using the TVMaze API.
+The platform must:
+> List the show with reduced information.
+> Click on a show and show more information.
+
+## Proposed Solutions
+#### Layout Structure:
+Classic Header - Body - Footer structure. 
+The body of the page is made so that different categories can be added if desired. Currently an example is shown with the movie that had the best rating.
+#### Data: 
+Fetched from [TV Maze API](https://api.tvmaze.com/search/shows?q=girls).
+#### Interface: 
+All data is validated with Typescript. The interfaces are in the 'interfaces' folder.
+#### Navigation: 
+The navigation of the pages is managed with NextJS. It has a main screen and another page called '[id]' which loads the movie requested by the user.
+#### Style:
+Tailwind CSS. The website adapts to any screen type.
+
+
+
+
+
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
